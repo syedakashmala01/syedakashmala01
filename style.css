@@ -1,0 +1,760 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #cac6c6;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo-place {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-place img {
+    width: 50%;
+    height: 140px;
+}
+
+.links {
+    flex: 2;
+    display: flex;
+    justify-content: center; /* Center the links */
+    height: 100%;
+    align-items: center;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    margin: 0 20px;  /*Add space between the items */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;  /* Keep the link color black */
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.nav-list img {
+    width: 24px; /* Adjusts icon size */
+    height: auto;
+}
+
+.nav-list-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu li {
+    white-space: nowrap;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px; /* Padding for dropdown items */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the entire area clickable */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* To prevent the dropdown trigger link from looking like a standard link */
+.nav-list-dropdown > a {
+    color: black; /* Set color to black */
+    padding: 10px; /* Ensure consistent padding */
+    font-weight: bold; /* Keep it bold */
+    background: none; /* Remove background if any */
+    border: none; /* Remove border if any */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.nav-list-dropdown > a:hover {
+    background-color: #f0f0f0; /* Change background on hover for dropdown trigger */
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-image: url(./high-fashion-look-glamor-closeup-portrait-beautiful-sexy-stylish-caucasian-young-woman-model-with-bright-makeup-with-red-lips-with-perfect-clean-skin-big-black-hat_158538-13488.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f4f4f9; /* Optional background color */
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Left Content */
+.hero-cont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left; /* Adjust for left-aligned text */
+}
+
+/* Right Image */
+.image-hero {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+/* Button Styling */
+#cta-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff512f, #dd2476);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#cta-btn:hover {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    transform: scale(1.05);
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Our Gallery Section */
+#our-gallery {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#our-gallery h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Gallery Cards Container */
+.gallery-cards-here {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Gallery Cards */
+#gallery-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: calc(33.333% - 20px); /* Takes 1/3 of the available space minus gap */
+    max-width: 350px;
+    min-width: 250px;
+}
+
+#gallery-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Images inside the cards */
+#gallery-card img {
+    width: 350px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.new-arrivals{
+    margin-top: 10px;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.new-arrivals h1 {
+    margin: 20px 0; /* Add some vertical spacing */
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Darker color for better visibility */
+}
+
+/* .clothing-cards-place{
+   
+
+} */
+.clothing-cards-here{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    flex-wrap: wrap;
+    padding: 10px , 30px;
+    margin-left: 50px;
+    justify-content: space-around;
+    gap: 20px;
+}
+/* Section Styling */
+.our-products {
+    color: black;
+    margin-top: 10px;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-products-here {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    flex-wrap: wrap;
+    padding: 10px , 30px;
+    margin-left: 50px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.products-card {
+    width: 350px;
+    height: 930px; /* Change height to auto for flexible content */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the card */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Ensure children stack vertically */
+}
+
+.products-card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+/* Product Image */
+.products-card img {
+    width: 100% !important;
+    height: 500px;
+    object-fit: fill;
+    border-bottom: 1px solid #ddd; /* Thin border between image and description */
+}
+
+/* Product Description */
+.product-description {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow the description to take remaining space */
+}
+
+.product-description h2 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Price Styling */
+#product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Rating Styling */
+.rating {
+    margin: 10px 0;
+}
+
+.rating i {
+    color: #f39c12; /* Color for stars */
+}
+
+.total-rating {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Buy Now Button */
+.buy-now {
+    margin-top: 15px;
+}
+
+#buy-now {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+#buy-now:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.about {
+    padding: 50px;
+    margin-top: 10px;
+}
+
+.about-aura-style {
+    overflow: hidden; /* Contain floated elements */
+}
+
+.about-aura {
+    width: 100%; /* Full width for the aura container */
+}
+#about-head{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+#about-image {
+    float: left; /* Float the image to the left */
+    width: 40%; /* Set width to 40% */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and content */
+}
+#about-image img{
+    width: 400px;
+    height: auto;
+}
+.about-content {
+    float: left; /* Float the content next to the image */
+    width: 60%; /* Set width to 60% */
+    max-width: 600px; /* Max width for the content */
+}
+
+.about-content p {
+    font-size: 1.1em; /* Font size for paragraphs */
+    color: #666; /* Text color */
+    line-height: 1.6; /* Line height for better readability */
+    font-style: italic; /* Makes text italic */
+}
+
+
+.about-btn {
+    margin-top: 20px; /* Space above the button */
+}
+
+.about-btn a {
+    text-decoration: none; /* Remove underline from the link */
+    background-color: #e67e22; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.about-btn a:hover {
+    background-color: #d35400; /* Darker shade on hover */
+}
+
+/* About Us Section */
+.aboutus {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+#about-head-1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* About Aura Style */
+.about-aura-style-1 {
+    overflow: hidden; /* Clearfix for floated elements */
+    margin-bottom: 30px;
+}
+
+.about-content {
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Paragraph Styling */
+.about-para {
+    float: left; /* Float left */
+    width: 65%; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-story {
+    margin-top: 15px;
+}
+
+/* Image Styling */
+.about-content-image {
+    float: right; /* Float right */
+    width: 30%; /* Adjust width as needed */
+}
+
+.about-content-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Clearfix */
+.about-aura-style-1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Mission Section */
+.mission {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission and Vision Titles */
+.mission h3,
+.our-vision h3 {
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Vision Section */
+.our-vision {
+    margin-top: 20px;
+}
+
+.vision-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vision-list li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-left: 4px solid #007BFF;
+    border-radius: 4px;
+}
+
+/* Customer Reviews Section */
+#customer-reviews {
+    margin-top: 40px;
+}
+
+#customer-reviews h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.blockquotes-cards-place {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: space-between; /* Spacing between cards */
+    gap: 20px; /* Space between cards */
+}
+
+.blockquotes-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px); /* Responsive width */
+    min-width: 250px; /* Minimum width for cards */
+}
+
+.blockquotes-card blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+
+footer.foot {
+    background-color: #2f3031; /* Dark background color */
+    color: white; /* White text color for contrast */
+    padding: 40px 20px; /* Padding around the footer */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+.footer-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.foot-contact-details,
+.useful-links,
+.social-links {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 15px; /* Margin for spacing */
+    min-width: 200px; /* Minimum width for better responsiveness */
+}
+
+
+.social-links {
+    display: flex; /* Flexbox for social links */
+    flex-direction: column; /* Stack social links vertically */
+    align-items: center; /* Center social links */
+}
+
+.footer-copyright {
+    text-align: center; /* Center align copyright text */
+    margin-top: 20px; /* Space above copyright */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.foot h2 {
+    margin-bottom: 15px; /* Space below headings */
+    font-size: 1.5em; /* Larger font size for headings */
+    border-bottom: 2px solid #13181b; /* Underline for headings */
+    padding-bottom: 5px; /* Padding below heading */
+}
+
+.footer-links ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    margin: 8px 0; /* Space between list items */
+}
+
+.footer-links a {
+    color: #ecf0f1; /* Lighter text color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+.social-list {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 10px; /* Space above social links */
+}
+
+.soc-link {
+    margin: 0 10px; /* Space between social icons */
+}
+
+.soc-link a {
+    color: #ecf0f1; /* Color for social icons */
+    font-size: 1.5em; /* Size of icons */
+}
+
+.soc-link a:hover {
+    color: #3498db; /* Change color on hover */
+}
+@media screen and (min-width: 260px) and (max-width: 915px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        height: auto; /* Allow height to adjust */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .logo-place img {
+        width: 80%; /* Make logo responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the start */
+        width: 100%; /* Full width */
+    }
+
+    #nav-list {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center items */
+    }
+
+    .nav-list {
+        margin: 10px 0; /* Vertical margin for spacing */
+    }
+
+    .hero {
+        height: 400px; /* Reduce height for hero section */
+    }
+
+    .hero-cont {
+        width: 100%; /* Full width for content */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .image-hero {
+        width: 100%; /* Full width for image */
+        padding: 0; /* Remove padding */
+    }
+
+    .gallery-cards-here {
+        flex-direction: column; /* Stack gallery cards */
+        align-items: center; /* Center align cards */
+}
+
+    #gallery-card {
+        width: 90%; /* Make cards responsive */
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    .clothing-cards-here, .our-products-here {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for two columns */
+    }
+
+    .products-card {
+        width: 90%; /* Make product cards responsive */
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    .about-aura {
+        width: 100%; /* Full width for about section */
+    }
+
+    #about-image {
+        width: 100%; /* Full width for image */
+        margin: 0; /* Remove margin */
+        float: none; /* Reset float */
+    }
+
+    .about-content {
+        width: 100%; /* Full width for content */
+        float: none; /* Reset float */
+    }
+
+    .about-aura-style-1 {
+        flex-direction: column; /* Stack about section items */
+    }
+
+    #about-head {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .mission-list li {
+        font-size: 1rem; /* Adjust font size for mission items */
+    }
+
+    .reviews h3 {
+        font-size: 1.2rem; /* Adjust review heading size */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer items */
+        align-items: center; /* Center footer content */
+    }
+
+    .foot-contact-details,
+    .useful-links,
+    .social-links {
+        margin: 10px 0; /* Vertical margin for footer sections */
+        width: 100%; /* Full width for sections */
+    }
+
+    .footer-links ul {
+        padding: 10px 0; /* Add padding for better spacing */
+    }
+
+    .soc-link {
+        margin: 5px; /* Adjust margin for social links */
+    }
+}
