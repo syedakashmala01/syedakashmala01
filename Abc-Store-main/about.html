@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Style | Where Your Fashion Radiates Elegance.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+    .aboutus {
+        background-color: #fdfdfd; /* Soft white background for cleanliness */
+        padding: 4rem 2rem; /* Generous padding for spaciousness */
+        max-width: 1200px; /* Max width for larger screens */
+        margin: 2rem auto; /* Center the section */
+        border-radius: 12px; /* Rounded corners for softness */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        text-align: left; /* Left align text for better readability */
+        font-family: 'Arial', sans-serif; /* Clean, modern font */
+    }
+    
+    .aboutus h1 {
+        font-size: 2.8rem; /* Large heading size */
+        color: #2C3E50; /* Dark color for the heading */
+        margin-bottom: 1.5rem; /* Space below the heading */
+        letter-spacing: 1px; /* Slight letter spacing for elegance */
+        text-align: center; /* Centered heading */
+    }
+    
+    .about-aura-style-1 {
+        display: flex; /* Flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap */
+        gap: 2rem; /* Gap between flex items */
+        align-items: flex-start; /* Align items to the top */
+    }
+    
+    .about-content {
+        flex: 1 1 60%; /* Flex grow and shrink with a base size */
+        padding: 1rem; /* Padding around content */
+    }
+    
+    .about-para {
+        font-size: 1rem; /* Increased size for readability */
+        line-height: 1.6; /* Improved line height for better readability */
+        color: #333; /* Darker color for paragraph text */
+        margin-bottom: 1.5rem; /* Space between paragraphs */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .about-para:hover {
+        color: #2980B9; /* Color change on hover for interactivity */
+    }
+    
+    .about-content-image {
+        flex: 1 1 35%; /* Flex grow and shrink with a base size */
+        text-align: center; /* Center the image */
+        margin-top: 2rem; /* Space above the image */
+    }
+    
+    .responsive {
+        width: 100%; /* Full width for the image */
+        height: 800px; /* Maintain aspect ratio */
+        border-radius: 12px; /* Rounded corners */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Shadow for image */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+    }
+    
+    .responsive:hover {
+        transform: scale(1.05); /* Slight zoom effect on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+    }
+    
+    
+    .our-story {
+        background-color: #f8f9fa; /* Light grey background for contrast */
+        padding: 3rem 1.5rem; /* Generous padding for spaciousness */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        margin: 2rem auto; /* Center the section */
+        max-width: 1200px; /* Max width for larger screens */
+    }
+    
+    .our-story-fm {
+        text-align: center; /* Center-align content */
+    }
+    
+    .about-story-head {
+        font-size: 2.5rem; /* Large font size for the heading */
+        color: #2980B9; /* Professional blue color */
+        margin-bottom: 1.5rem; /* Spacing below heading */
+    }
+    
+    .about-story-content {
+        font-size: 1.1rem; /* Font size for readability */
+        line-height: 1.6; /* Increased line height for better readability */
+        color: #333; /* Darker text color for contrast */
+    }
+    
+    .about-story-content p {
+        margin-bottom: 1.5rem; /* Spacing below paragraphs */
+        text-align: justify; /* Justify text for a cleaner look */
+    }
+    
+    /* Mission Styles */
+    .about-mission {
+        background-color: #ffffff; /* White background for clarity */
+        padding: 3rem 2rem; /* Padding for spaciousness */
+        margin: 2rem auto; /* Center the section */
+        border-radius: 12px; /* Rounded corners for consistency */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+    }
+    
+    .mission h3 {
+        font-size: 2.5rem; /* Larger heading size for impact */
+        color: #2980B9; /* Professional blue color */
+        margin-bottom: 1rem; /* Spacing below headings */
+        text-align: center; /* Center heading text */
+    }
+    
+    .mission p {
+        font-size: 1.1rem; /* Readable font size */
+        color: #555; /* Softer color for readability */
+        margin-bottom: 1.5rem; /* Spacing below paragraphs */
+        line-height: 1.7; /* Increased line height for readability */
+    }
+    
+    #our-vision {
+        background-color: #f0f4f8; /* Light background for contrast */
+        padding: 3rem 1.5rem; /* Padding for spaciousness */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        margin: 2rem auto; /* Center the section */
+        max-width: 1200px; /* Max width for larger screens */
+    }
+    
+    #our-vision-head {
+        font-size: 2.5rem; /* Larger font for the heading */
+        text-align: center; /* Center the heading */
+        color: #2980B9; /* Professional blue color */
+        margin-bottom: 1.5rem; /* Spacing below heading */
+    }
+    
+    .our-vision p {
+        font-size: 1.1rem; /* Font size for better readability */
+        color: #333; /* Darker text color for contrast */
+        line-height: 1.6; /* Increased line height for better readability */
+        margin-bottom: 1.5rem; /* Spacing below paragraphs */
+    }
+    
+    .vision-list {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+        margin-bottom: 1.5rem; /* Space below the list */
+    }
+    
+    .vision-list li {
+        display: flex; /* Flexbox for alignment */
+        align-items: center; /* Center icons vertically with text */
+        color: #000;
+        margin-bottom: 1rem; /* Space between list items */
+        padding: 10px; /* Padding for each list item */
+        border-radius: 5px; /* Rounded corners for list items */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .vision-list li i {
+        margin-right: 10px; /* Space between icon and text */
+        color: #154c70 !important; /* Icon color */
+        font-size: 1.5rem; /* Icon size */
+    }
+    
+    /* Customer Reviews Section */
+    .about-quotes {
+        background-color: #e9f5ff; /* Light blue background for quotes */
+        padding: 4rem 2rem; /* Generous padding */
+        margin: 2rem auto;
+        border-radius: 12px; /* Rounded corners */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+    }
+    
+    .rev-head {
+        text-align: center; /* Centered heading for reviews */
+        font-size: 2.5rem; /* Size for the reviews heading */
+        color: #2C3E50; /* Dark color for the heading */
+        margin-bottom: 1.5rem;
+    }
+    
+    .blockquotes-cards-place {
+        display: grid; /* Grid layout for cards */
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+        gap: 1.5rem; /* Space between cards */
+        padding: 0 1rem; /* Side padding for mobile devices */
+    }
+    
+    .blockquotes-card {
+        background-color: #ffffff; /* White background for each quote */
+        padding: 2rem; /* Padding for quote cards */
+        border-radius: 8px; /* Subtle rounding */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for quotes */
+        text-align: center; /* Center text in quote cards */
+    }
+    
+    .blockquotes-card blockquote {
+        font-style: italic; /* Italicize quote text */
+        font-size: 1.2rem; /* Slightly larger font size for quotes */
+        margin: 0; /* Remove default margin */
+        color: #333; /* Standard text color */
+    }
+        </style>
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-place">
+                <img src="./Azi_Store-removebg-preview.png" alt="">
+            </div>
+            <div class="links">
+                <ul id="nav-list">
+                    <li class="nav-list"><a href="index.html">Home</a></li>
+                    <li class="nav-list-dropdown">
+                        <a href="#">Products <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Clothing.html">CLOTHING</a></li>
+                            <li><a href="Cosmetics.html">COSMETICS</a></li>
+                            <li><a href="Bags.html">BAGS</a></li>
+                            <li><a href="shoes.html">SHOES</a></li>
+                            <li><a href="Fragrances.html">FRAGRANCES</a></li>
+                            <li><a href="products.html">NEW ARRIVAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list"><a href="about.html">About</a></li>
+                    <li class="nav-list"><a href="contact.html">Contact Us</a></li>
+                    <li class="nav-list"><a href="signup.html"><img src="./bag.png" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+		<section class="aboutus">
+			<h1 id="about-head-1">About Us</h1>
+			<div class="about-aura-style-1">
+				<div class="about-content">
+                    <div class="about-para">
+                        <p>Welcome to Aura Style, your number one source for all things fashion. We're dedicated to giving you the very best of clothing, with a focus on dependability, customer service, and uniqueness. At Aura Style, we believe that fashion is more than just clothing—it's a way to express your unique personality and confidence. From timeless classics to bold, modern designs, our carefully curated collections are designed to make every woman feel empowered and radiant.</p>
+                        
+                        <p>With a focus on quality, elegance, and affordability, we bring the latest trends to your wardrobe without compromising on style or comfort. Our team of passionate fashion enthusiasts works tirelessly to stay ahead of the trends, ensuring that you have access to the freshest styles that inspire creativity and self-expression. Each piece is thoughtfully designed to cater to diverse tastes and lifestyles, so you can find exactly what resonates with you.</p>
+                        
+                        <p>Our mission is to inspire women to embrace their individuality and express themselves through style, helping you feel beautiful inside and out. We believe that every woman deserves to feel confident and comfortable in her own skin, and our clothing is crafted to enhance that feeling. Whether you're dressing for a casual day out, a professional setting, or a special occasion, we have something special that complements your unique flair.</p>
+                        
+                        <p>At Aura Style, we also value sustainability and ethical practices. We strive to make fashion that not only looks good but is also good for the planet. By collaborating with ethical manufacturers and utilizing eco-friendly materials, we aim to create a positive impact in the fashion industry. Our commitment to sustainability extends beyond our products; we seek to inspire our customers to make conscious fashion choices that contribute to a healthier planet.</p>
+                        
+                        <p>In addition to our stylish offerings, we take pride in providing an exceptional shopping experience. Our user-friendly website makes browsing and purchasing a breeze, while our dedicated customer service team is always available to assist you with any questions or concerns. We want you to feel valued and supported at every step of your shopping journey.</p>
+                        
+                        <p>Thank you for choosing Aura Style as your go-to destination for fashion. We’re excited to accompany you on your style journey and can’t wait to see how you make our pieces your own! Together, let’s celebrate individuality, creativity, and the transformative power of fashion.</p>
+                        
+                        <p>Join our community of fashion lovers by following us on social media for styling tips, exclusive promotions, and the latest updates. Let’s create a vibrant space where we can all share our love for fashion and inspire each other to shine!</p>
+                    </div>
+                    
+				</div>
+                <div class="about-content-image">
+                    <img src="./a-background-image-for-an-aura-style-women-s-fashi-YCwiSJ1rQZ6I--UL2nmVyA-BgVytfhDRJiq2zbJVJ3CdA.jpeg" alt="Aura Fashion" class="responsive">
+                </div>
+			</div>
+		</section>
+       
+		
+		<section class="about-mission">
+            <h3 id="our-mission-head">Our Mission</h3>
+            <div class="info">
+			<div class="mission">
+				<p>At Aura Style, our mission is to empower individuals to express themselves through fashion and inspire confidence by offering a diverse range of styles that suit all body types, preferences, and moods. We believe that true style comes from within, and our goal is to help you express that effortlessly. Our collections celebrate diversity and inclusivity, ensuring that everyone can find pieces that resonate with their unique identity.</p>
+				<p>Customer satisfaction is our top priority. We are committed to providing a seamless shopping experience through a user-friendly website, secure payment options, and fast, reliable shipping. Our dedicated customer support team is always here to assist you with any inquiries or concerns, ensuring that you feel valued and supported throughout your journey with us. We strive to make shopping enjoyable and stress-free, allowing you to focus on what matters most: expressing yourself through fashion.</p>
+				<p>To enhance your shopping experience, we offer a hassle-free return policy and a commitment to quality that you can trust. Each piece in our collection undergoes meticulous quality checks to ensure that you receive only the best. At Aura Style, we not only want you to look good but also to feel good about your choices, knowing you’re supporting a brand that cares about sustainability and ethical practices.</p>
+				<p>Join us in redefining fashion as a means of self-expression and empowerment. Together, let’s embrace our individuality and celebrate our unique journeys through style!</p>
+			</div>
+			<div class="img">
+				<img src="https://www.louisvuitton.com/images/is/image/lv/W_BC_LG_NVFISO_WORNCAMPAIGN_SEPT24_02_DI3.jpg?wid=1440" alt="Branded clothes" class="responsive">
+			</div>
+        </div>
+		</section>
+		
+		<section id="our-vision">
+			<h3 id="our-vision-head">Our Vision</h3>
+			<div class="our-vision">
+				<p>
+					At Aura Style, we envision a world where fashion transcends mere aesthetics and becomes a powerful tool for self-expression and positive change. We aim to set new industry standards by fostering a culture of inclusivity, sustainability, and creativity. Our vision is not just to create beautiful clothing, but to inspire a community of individuals who believe in the transformative power of fashion.
+				</p>
+				<ul class="vision-list">
+					<li><i class="fas fa-leaf"></i> To promote sustainability and ethical manufacturing.</li>
+					<li><i class="fas fa-users"></i> To celebrate diversity and inclusivity in fashion.</li>
+					<li><i class="fas fa-tag"></i> To offer quality fashion at affordable prices.</li>
+					<li><i class="fas fa-smile"></i> To inspire confidence and self-expression through style.</li>
+					<li><i class="fas fa-shopping-cart"></i> To provide a seamless online shopping experience.</li>
+					<li><i class="fas fa-hands-helping"></i> To support local artisans and ethical production.</li>
+					<li><i class="fas fa-cogs"></i> To innovate in design and technology for better fashion.</li>
+					<li><i class="fas fa-star"></i> To prioritize customer satisfaction in every aspect.</li>
+					<li><i class="fas fa-clock"></i> To create timeless pieces that can be cherished for years.</li>
+					<li><i class="fas fa-book-open"></i> To educate consumers on sustainable fashion practices.</li>
+				</ul>
+				<p>
+					At Aura Style Collection, we pride ourselves on offering high-quality, trendsetting designs that cater to every taste and style. Enjoy seamless shopping with our user-friendly website, and take advantage of free shipping on all orders. Explore our new arrivals and bestsellers to find your next favorite piece. Elevate your style with Aura Style Collection today.
+				</p>
+			</div>
+		</section>
+		
+		
+		<section class="about-quotes">
+			<h1 class="rev-head">Customer Reviews</h1>
+				<div class="blockquotes-cards-place">
+					<div class="blockquotes-card">
+						<blockquote>"Aura Style has completely transformed my wardrobe! The quality and uniqueness of their pieces are unmatched." - Sarah L., 28</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"I love the commitment to sustainability. It feels good to shop knowing my clothes are ethically made." - Emily R., 24</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"Every time I wear my Aura Style dress, I get compliments! The designs are just stunning." - Jessica M., 30</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"Shopping at Aura Style is always a pleasant experience. Their customer service is top-notch!" - Mia T., 25</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"I appreciate the variety of sizes and styles. It makes finding the perfect outfit so much easier." - Lisa K., 27</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"Fast shipping and hassle-free returns! I’ll definitely be back for more." - Anna P., 22</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"The colors and patterns are so vibrant! I feel confident every time I wear my Aura Style clothes." - Rachel D., 29</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"I’m impressed by the quality of the fabrics. They feel luxurious without breaking the bank." - Mia H., 31</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"Aura Style's collection is always on-trend. I love how they keep up with the latest fashion." - Angela C., 26</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"Finally found a brand that celebrates diversity! Their styles cater to every woman." - Zoe R., 23</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"I can’t recommend Aura Style enough! Their pieces are perfect for both casual and formal occasions." - Chloe S., 32</blockquote>
+					</div>
+					<div class="blockquotes-card">
+						<blockquote>"I love how each piece feels like it’s made just for me. Thank you, Aura Style!" - Priya T., 21</blockquote>
+					</div>
+				</div>
+		</section>
+		
+    </main>
+
+    <section class="footer">
+        <footer class="foot">
+            <div class="footer-content">
+                <div class="foot-contact-details">
+                    <h2>Contact Us</h2>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: Cxjw0@example.com</p>
+                    <p>Address: Your Address</p>
+                </div>
+                <div class="useful-links">
+                    <h2>Useful Links</h2>
+                    <div class="footer-links">
+                        <ul class="footlinks">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="products.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                            <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                            <li><a href="https://www.google.com/intl/en-US/gmail/about/"><i class="fas fa-envelope"></i> Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h2>Follow Us</h2>
+                    <div class="social-list">
+                        <div class="soc-link">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        <div class="soc-link">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="soc-link">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="soc-link">
+                            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="soc-link">
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="soc-link">
+                            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <!-- <div class="soc-link">
+                            <a href="https://www.google.com/intl/en-US/gmail/about/"><i class="fab fa-Email"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 AuraStyle. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+    
+    </body>
+    </html>
